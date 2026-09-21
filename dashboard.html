@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Aureus | Dashboard</title>
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- ================= SIDEBAR ================= -->
+
+<aside class="sidebar" id="sidebar">
+
+    <div class="logo-area">
+        <div class="logo-mark">A</div>
+
+        <div>
+            <h2>AUREUS</h2>
+            <span>BUSINESS PLATFORM</span>
+        </div>
+    </div>
+
+    <div class="menu-title">MAIN MENU</div>
+
+    <nav>
+
+        <button class="nav-item active" data-page="overview">
+            <i class="fa-solid fa-chart-pie"></i>
+            <span>Overview</span>
+        </button>
+
+        <button class="nav-item" data-page="products">
+            <i class="fa-solid fa-cubes"></i>
+            <span>Products</span>
+        </button>
+
+        <button class="nav-item" data-page="solutions">
+            <i class="fa-solid fa-lightbulb"></i>
+            <span>Solutions</span>
+        </button>
+
+        <button class="nav-item" data-page="projects">
+            <i class="fa-solid fa-briefcase"></i>
+            <span>Projects</span>
+        </button>
+
+        <button class="nav-item" data-page="clients">
+            <i class="fa-solid fa-users"></i>
+            <span>Clients</span>
+        </button>
+
+        <button class="nav-item" data-page="analytics">
+            <i class="fa-solid fa-chart-line"></i>
+            <span>Analytics</span>
+        </button>
+
+        <div class="menu-title">ACCOUNT</div>
+
+        <button class="nav-item" data-page="notifications">
+            <i class="fa-solid fa-bell"></i>
+            <span>Notifications</span>
+            <b class="notification-count">3</b>
+        </button>
+
+        <button class="nav-item" data-page="profile">
+            <i class="fa-solid fa-user"></i>
+            <span>Profile</span>
+        </button>
+
+        <button class="nav-item" data-page="settings">
+            <i class="fa-solid fa-gear"></i>
+            <span>Settings</span>
+        </button>
+
+    </nav>
+
+    <div class="sidebar-bottom">
+
+        <div class="support-box">
+            <i class="fa-solid fa-headset"></i>
+
+            <div>
+                <strong>Need help?</strong>
+                <small>Contact Aureus support</small>
+            </div>
+        </div>
+
+        <button class="logout-btn" id="logoutBtn">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            Logout
+        </button>
+
+    </div>
+
+</aside>
+
+
+<!-- ================= MAIN ================= -->
+
+<main class="main">
+
+    <!-- TOP BAR -->
+
+    <header class="topbar">
+
+        <button class="mobile-menu" id="mobileMenu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <div class="breadcrumb">
+            <span>Aureus</span>
+            <i class="fa-solid fa-chevron-right"></i>
+            <strong id="pageTitle">Overview</strong>
+        </div>
+
+        <div class="top-actions">
+
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input
+                    type="text"
+                    id="globalSearch"
+                    placeholder="Search..."
+                >
+            </div>
+
+            <button class="icon-btn" id="notificationButton">
+                <i class="fa-regular fa-bell"></i>
+                <span></span>
+            </button>
+
+            <div class="profile-menu">
+
+                <button class="profile-button" id="profileButton">
+
+                    <div class="avatar">
+                        AJ
+                    </div>
+
+                    <div class="profile-text">
+                        <strong>Admin User</strong>
+                        <small>Administrator</small>
+                    </div>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </button>
+
+                <div class="profile-dropdown" id="profileDropdown">
+
+                    <button data-page="profile">
+                        <i class="fa-solid fa-user"></i>
+                        My Profile
+                    </button>
+
+                    <button data-page="settings">
+                        <i class="fa-solid fa-gear"></i>
+                        Settings
+                    </button>
+
+                    <hr>
+
+                    <button id="dropdownLogout">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        Logout
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= PAGE CONTENT ================= -->
+
+    <section class="content" id="content">
+
+        <!-- CONTENT GENERATED BY JAVASCRIPT -->
+
+    </section>
+
+</main>
+
+
+<!-- ================= MODAL ================= -->
+
+<div class="modal-overlay" id="modalOverlay">
+
+    <div class="modal">
+
+        <button class="modal-close" id="modalClose">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <div id="modalContent"></div>
+
+    </div>
+
+</div>
+
+
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>
